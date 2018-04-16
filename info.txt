@@ -1,0 +1,4 @@
+Intel HAXM
+Android v 4.3+
+Mac Mini, Mac Book or other Apple hardware
+Add Mac VM?
