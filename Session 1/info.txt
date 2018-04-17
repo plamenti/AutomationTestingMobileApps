@@ -1,0 +1,18 @@
+wifi: Pragmatic Academy - London
+pass: knowledge123
+
+Learning System: http://learn.pragmatic.bg/
+User: your email
+Pass: welcome123
+
+Day1 - Mobile Testing Intro
+Day2 - Environment Setup (Android & iOS)
+Day3 - Testing Tools Review (plus Sikuli demos)
+Day4 - Testing in Java (Junit, TestNG, Maven, Gradle)
+Day5 - Day10 - Appium
+Day11 - RestAssured ???
+Day12 - CI and Jenkins ???
+Day13 - The Final ???
+
+Other resources:
+https://github.com/dtopuzov
