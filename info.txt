@@ -5,3 +5,5 @@ Add Mac VM?
 
 Check for Mac mini
 Check for Mac Pro
+
+HAXM is installed in <ANDROID_HOME>\extras
