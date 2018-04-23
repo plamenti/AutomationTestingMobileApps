@@ -7,3 +7,67 @@ Check for Mac mini
 Check for Mac Pro
 
 HAXM is installed in <ANDROID_HOME>\extras
+
+INSTALL ANDROID SDK:
+1. Download .zip file with Android SDK
+2. Unzip the .zip file in some folder
+3. Set up ANDROID_HOME env variable
+4. To install e.g. android-23:
+	(In file yes.txt is only one char Y. If you want to use this approach the CMD should be opened in the same folder with file yes.txt or the full path to the yes.txt file)
+	4.1 In the folder with .zip file open the CMD
+	%ANDROID_HOME%\tools\bin\sdkmanager "tools" < yes.txt
+	%ANDROID_HOME%\tools\bin\sdkmanager "build-tools;27.0.3" < yes.txt
+	%ANDROID_HOME%\tools\bin\sdkmanager "build-tools;26.0.3" < yes.txt
+	%ANDROID_HOME%\tools\bin\sdkmanager "build-tools;25.0.3" < yes.txt
+	%ANDROID_HOME%\tools\bin\sdkmanager "build-tools;23.0.1" < yes.txt
+	%ANDROID_HOME%\tools\bin\sdkmanager "emulator" < yes.txt
+	%ANDROID_HOME%\tools\bin\sdkmanager "extras;android;m2repository" < yes.txt
+	%ANDROID_HOME%\tools\bin\sdkmanager "extras;google;m2repository" < yes.txt
+	4.2 In CMD type %ANDROID_HOME%\tools\bin\sdkmanager "platforms;android-23" < yes.txt (In file yes.txt is only one char Y. If you want to use this approach the CMD should be opened in the same folder with file yes.txt or the full path to the yes.txt file)
+5. To update the image:
+	In CMD type %ANDROID_HOME%\tools\bin\sdkmanager "system-images;android-23;default;x86"
+	
+	If warning ".... .repositories.cfg ....." is displayed:
+	Go to .android and create .repositories.cfg file (empty)
+6. To create emulator:
+	In CMD type %ANDROID_HOME%\tools\bin\avdmanager create avd -n Emulator-Api23-Default -k "system-images;android-23;default;x86" -b default/x86 -c 12M -f < Enter.txt (In file Enter.txt is added Enter. By hand just click Enter)
+7. Install HAXM:
+	In CMD type:
+	echo "y" | %ANDROID_HOME%\tools\bin\sdkmanager "extras;intel;Hardware_Accelerated_Execution_Manager"
+	set current_dir=%CD%
+	cd %ANDROID_HOME%\extras\intel\Hardware_Accelerated_Execution_Manager
+	silent_install.bat || ver>nul
+	cd %current_dir%
+	
+	This does not install the emulator. 
+	
+8. TO check if the Emulator s created:
+	Navigate to C:\Users\<your_ser>\.android\avd
+	If there is some folder with the name of the emulator (if this tut is followed should be Emulator-Api23-Default)
+	
+9. Navigate to C:\Users\<your_ser>\.android\avd\Emulator-Api23-Default
+	In file config.ini paste (Concatenate! This data is taken from Session 2\setup-windows\config find the wanted .ini file):
+	PlayStore.enabled=false
+	abi.type=x86
+	avd.ini.encoding=UTF-8
+	hw.cpu.arch=x86
+	hw.sdCard=yes
+	image.sysdir.1=system-images/android-23/default/x86/
+	sdcard.size=12M
+	tag.display=
+	tag.id=default
+	hw.lcd.density=240
+	skin.name=480x800
+	hw.gpu.enabled=yes
+	hw.keyboard=no
+	
+10. To tun the emulator
+	%ANDROID_HOME%\tools\emulator -avd Emulator-Api23-Default
+	
+	
+	
+To list all packages:
+%ANDROID_HOME%/platform-tools/adb shell pm list packages
+
+To list only 3:
+%ANDROID_HOME%/platform-tools/adb shell pm list packages -3
