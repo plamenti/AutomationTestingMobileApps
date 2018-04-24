@@ -1,0 +1,11 @@
+1. Install Android SDK
+2. Create Android 4.4 emulator
+3. Start the emulator
+4. Create bat file which
+- Install apk (selendroid-test-app-0.11.0.apk)
+- Run it
+- Clean log 
+- Wait 60sec (in this time you manually click "Press to throw unhandled exception" button to crash the app)
+- Get console log
+- Get screenshot
+- Get all running apps 
