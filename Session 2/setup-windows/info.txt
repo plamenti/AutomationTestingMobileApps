@@ -1,0 +1,7 @@
+Steps:
+1. Extract the zip with androd-sdk download
+2. Set ANDROID_HOME variable
+3. Get win-setup-fixed.zip form the learning system and extract it
+4. Open cmd and navigate where setup script is extracted
+5. run "mini-script.bat" and wait ~30min and it should do all the things
+Notes; ...and still, do not trust me, may be you what to run script line by line 
