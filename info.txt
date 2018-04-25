@@ -71,3 +71,5 @@ To list all packages:
 
 To list only 3:
 %ANDROID_HOME%/platform-tools/adb shell pm list packages -3
+
+To simulate hard reset add -wipe-data at the end of the line that boots the emulator.
