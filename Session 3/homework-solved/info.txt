@@ -1,0 +1,10 @@
+Two approaches:
+1. With two files because the first line take the console
+	run solution.bat and then solution1.bat
+
+2. With one files
+	Run all_in_one.bat
+	
+	The solution with one file is to add at the first line START /B and at the end > somefile.txt to redirect the output
+	Taken from here - https://superuser.com/questions/198525/how-can-i-execute-a-windows-command-line-in-background
+	
