@@ -1,0 +1,26 @@
+Task1:
+1. Start notepad via Sikuli run command
+2. Type text
+3. Save the file (you select how)
+- option 1: File -> Save
+- option 2: Do Ctrl+S with Sikuli
+4. Type file name and click save button
+5. (more advanced) Get content of saved file and assert text you typed is there
+Hints:
+http://doc.sikuli.org/faq/020-unit-test.html
+https://answers.launchpad.net/sikuli/+question/132445
+
+Task2:
+1. Start emualtor manually (for more advanced: start with automaticaly)
+2. Stop running selendroid demo app
+3. Start selendroid app
+4. Do some clicks and verifications
+5. Get console logs in file
+
+Task3:
+1. Start emualtor manually (for more advanced: start with automaticaly)
+2. Install this calculator: https://github.com/dtopuzov/mobile-tests/raw/master/testapps/Calculator_2.0.apk
+3. Run it
+4. Write some tests for calculator
+5. Close the app
+6. Get console logs in file 
