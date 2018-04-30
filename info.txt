@@ -64,7 +64,7 @@ INSTALL ANDROID SDK:
 10. To tun the emulator
 	%ANDROID_HOME%\tools\emulator -avd Emulator-Api23-Default
 	
-	
+Android Debug Bridge (adb) is a versatile command-line tool that lets you communicate with a device - https://developer.android.com/studio/command-line/adb
 	
 To list all packages:
 %ANDROID_HOME%/platform-tools/adb shell pm list packages
@@ -72,4 +72,64 @@ To list all packages:
 To list only 3:
 %ANDROID_HOME%/platform-tools/adb shell pm list packages -3
 
-To simulate hard reset add -wipe-data at the end of the line that boots the emulator.
+To list package, that contains some name:
+%ANDROID_HOME%/platform-tools/adb shell pm list packages -f 'some name'
+
+To simulate hard reset add -wipe-data at the end of the line that boots the emulator:
+%ANDROID_HOME%\tools\emulator -avd Emulator-Api23-Default -wipe-data
+
+To disable the Quick Boot feature completely — it does not load or save the emulator state:
+%ANDROID_HOME%\tools\emulator -avd Emulator-Api23-Default -no-snapshot
+
+To perform a cold boot, and save the emulator state on exit:
+%ANDROID_HOME%\tools\emulator -avd Emulator-Api23-Default -no-snapshot-load
+
+To perform a quick boot if possible, but without saving the emulator state on exit: 
+%ANDROID_HOME%\tools\emulator -avd Emulator-Api23-Default -no-snapshot-save
+
+More startup options - https://developer.android.com/studio/run/emulator-commandline#startup-options
+Command line options - https://developer.android.com/studio/run/emulator-commandline
+More command line options - https://gist.github.com/JonathanLalou/180c87554d8278b0e6d7
+
+To start some app in Android emulator or device:
+adb shell monkey -p app.package.name -c android.intent.category.LAUNCHER 1 
+	- This command simulates the app icon click, so the intent implicit intent LAUNCHER is delivered to the specific receiver declared in app manifest (MAIN)
+
+Send commands to a specific device (in this example with id 5555. -s overrides $ANDROID_SERIAL environment variable ):
+$ adb devices
+	List of devices attached
+	emulator-5554 device
+	emulator-5555 device
+$ adb -s emulator-5555 install helloWorld.apk
+	If you have multiple devices available, but only one is an emulator, use the -e option to send commands to the emulator. Likewise, if there are multiple devices but only one hardware device attached, use the -d option to send commands to the hardware device
+	
+Install an app ():
+$ adb install path_to_apk
+	
+Copy files to/from a device:
+$ adb pull remote local - to copy a file or directory and its sub-directories from the device
+$ adb push local remote - To copy a file or directory and its sub-directories to the device
+	Replace local and remote with the paths to the target files/directory on your development machine (local) and on the device (remote). For example:
+	$ adb push foo.txt /sdcard/foo.txt
+
+To start an application using android ADB tools:
+$ adb shell am start -n com.package.name/com.package.name.ActivityName
+
+To specify actions to be filtered by your intent-filters:
+$ adb shell am start -a com.example.ACTION_NAME -n com.package.name/com.package.name.ActivityName
+
+For linux/mac users - can also create a script to run an apk with something like the following:
+	create a file named "adb-run.sh" with these 3 lines:
+pkg=$(aapt dump badging $1|awk -F" " '/package/ {print $2}'|awk -F"'" '/name=/ {print $2}')
+act=$(aapt dump badging $1|awk -F" " '/launchable-activity/ {print $2}'|awk -F"'" '/name=/ {print $2}')
+adb shell am start -n $pkg/$act
+	then "chmod +x adb-run.sh" to make it executable.
+	now you can simply:
+adb-run.sh myapp.apk
+	This requires that you have aapt in your path. You can find it under the new build tools folder in the SDK.
+
+To run/start application specifying package name only using monkey tool by follow this pattern:
+$ adb shell monkey -p your.app.package.name -c android.intent.category.LAUNCHER 1
+	Command is used to run app using monkey tool which generates random input for application. The last part of command is integer which specify the number of generated random input for app. In this case the number is 1, which in fact is used to launch the app (icon click)
+
+

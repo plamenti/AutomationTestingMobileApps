@@ -1,0 +1,2 @@
+HAX is working and emulator runs in fast virt mode.
+emulator: WARNING: Discarding the changed state (command-line flag).
