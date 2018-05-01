@@ -133,3 +133,15 @@ $ adb shell monkey -p your.app.package.name -c android.intent.category.LAUNCHER 
 	Command is used to run app using monkey tool which generates random input for application. The last part of command is integer which specify the number of generated random input for app. In this case the number is 1, which in fact is used to launch the app (icon click)
 
 
+To get appPackage name and appActivity name in Windows and run the app (Use in Powershell)
+
+$pathToApk = "D:\Downloads\selendroid-test-app-0.11.0.apk"
+$dump =  & $Env:ANDROID_HOME\build-tools\27.0.3\aapt.exe dump badging $pathToApk
+$pkg = $dump -match "package: name=" | %{$_ -Split("'")} | Select-Object -Skip 1 | Select-Object -First 1
+$act = $dump -match "launchable-activity: name=" | %{$_ -Split("'")} | Select-Object -Skip 1 | Select-Object -First 1
+& $Env:ANDROID_HOME\platform-tools\adb.exe shell am start -n $pkg/$act
+
+To get appPackage name and appActivity name in Unix/Linux and run the app
+pkg=$(aapt dump badging $1|awk -F" " '/package/ {print $2}'|awk -F"'" '/name=/ {print $2}')
+act=$(aapt dump badging $1|awk -F" " '/launchable-activity/ {print $2}'|awk -F"'" '/name=/ {print $2}')
+adb shell am start -n $pkg/$act
