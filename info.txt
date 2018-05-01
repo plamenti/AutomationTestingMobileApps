@@ -145,3 +145,13 @@ To get appPackage name and appActivity name in Unix/Linux and run the app
 pkg=$(aapt dump badging $1|awk -F" " '/package/ {print $2}'|awk -F"'" '/name=/ {print $2}')
 act=$(aapt dump badging $1|awk -F" " '/launchable-activity/ {print $2}'|awk -F"'" '/name=/ {print $2}')
 adb shell am start -n $pkg/$act
+
+To start Appium server in the console:
+appium &
+
+To start android emulator:
+To free the console use START /B .... > somefile.txt
+START /B %ANDROID_HOME%/tools/emulator -avd Nexus5X > somefile.txt
+
+Whit locked console:
+%ANDROID_HOME%/tools/emulator -avd Nexus5X
