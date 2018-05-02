@@ -1,0 +1,615 @@
+2018-05-02 18:55:36:254 - info: [Appium] Welcome to Appium v1.8.0
+2018-05-02 18:55:36:256 - info: [Appium] Non-default server args:
+2018-05-02 18:55:36:257 - info: [Appium]   address: 127.0.0.1
+2018-05-02 18:55:36:257 - info: [Appium]   port: 33793
+2018-05-02 18:55:36:258 - info: [Appium]   log: /Users/dtopuzov/Git/pragmatic/calc/temp.log
+2018-05-02 18:55:36:281 - info: [Appium] Appium REST http interface listener started on 127.0.0.1:33793
+2018-05-02 18:55:36:485 - info: [HTTP] --> GET /wd/hub/status
+2018-05-02 18:55:36:486 - info: [HTTP] {}
+2018-05-02 18:55:36:489 - info: [debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+2018-05-02 18:55:36:501 - info: [debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.8.0","revision":null}}
+2018-05-02 18:55:36:508 - info: [HTTP] <-- GET /wd/hub/status 200 20 ms - 83
+2018-05-02 18:55:36:508 - info: [HTTP] 
+2018-05-02 18:55:37:071 - info: [HTTP] --> POST /wd/hub/session
+2018-05-02 18:55:37:071 - info: [HTTP] {"desiredCapabilities":{"app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default","platformName":"ANDROID"},"capabilities":{"desiredCapabilities":{"app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default","platformName":"ANDROID"},"firstMatch":[{"appium:app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","appium:automationName":"UIAutomator2","appium:avd":"Emulator-Api23-Default","appium:deviceName":"Emulator-Api23-Default","platformName":"android"}]}}
+2018-05-02 18:55:37:072 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default","platformName":"ANDROID"},null,{"desiredCapabilities":{"app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default","platformName":"ANDROID"},"firstMatch":[{"appium:app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","appium:automationName":"UIAutomator2","appium:avd":"Emulator-Api23-Default","appium:deviceName":"Emulator-Api23-Default","platformName":"android"}]}]
+2018-05-02 18:55:37:074 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1525287337073 (21:55:37 GMT+0300 (EEST))
+2018-05-02 18:55:37:086 - info: [Appium] Creating new AndroidUiautomator2Driver (v1.9.0) session
+2018-05-02 18:55:37:086 - info: [Appium] Capabilities:
+2018-05-02 18:55:37:086 - info: [Appium]   platformName: android
+2018-05-02 18:55:37:086 - info: [Appium]   app: https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk
+2018-05-02 18:55:37:087 - info: [Appium]   automationName: UIAutomator2
+2018-05-02 18:55:37:087 - info: [Appium]   avd: Emulator-Api23-Default
+2018-05-02 18:55:37:087 - info: [Appium]   deviceName: Emulator-Api23-Default
+2018-05-02 18:55:37:093 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities [object Object] were provided
+2018-05-02 18:55:37:093 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2018-05-02 18:55:37:104 - info: [BaseDriver] Session created with session id: a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:55:37:109 - info: [BaseDriver] Using downloadable app 'https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk'
+2018-05-02 18:55:39:070 - info: [debug] [BaseDriver] https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk downloaded to /var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk
+2018-05-02 18:55:39:070 - info: [debug] [BaseDriver] Downloaded file type 'application/octet-stream'
+2018-05-02 18:55:39:071 - info: [BaseDriver] Downloaded the app to '/var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk'
+2018-05-02 18:55:39:073 - info: [debug] [BaseDriver] Got 'undefined' as 'Last-Modified' HEAD response header value of 'https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk'
+2018-05-02 18:55:39:073 - info: [BaseDriver] Skipping 'https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk' caching, because the HEAD response didn't return any valid Last-Modified headers
+2018-05-02 18:55:39:074 - info: [debug] [UiAutomator2] Checking whether app is actually present
+2018-05-02 18:55:39:083 - info: [debug] [AndroidDriver] Getting Java version
+2018-05-02 18:55:39:206 - info: [AndroidDriver] Java version is: 1.8.0_162
+2018-05-02 18:55:39:209 - info: [ADB] Checking whether adb is present
+2018-05-02 18:55:39:221 - info: [ADB] Found 3 'build-tools' folders under '/usr/local/share/android-sdk' (newest first):
+2018-05-02 18:55:39:221 - info: [ADB]     /usr/local/share/android-sdk/build-tools/27.0.3
+2018-05-02 18:55:39:221 - info: [ADB]     /usr/local/share/android-sdk/build-tools/26.0.3
+2018-05-02 18:55:39:221 - info: [ADB]     /usr/local/share/android-sdk/build-tools/25.0.3
+2018-05-02 18:55:39:222 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
+2018-05-02 18:55:39:224 - info: [debug] [ADB] Trying to find Emulator-Api23-Default emulator
+2018-05-02 18:55:39:225 - info: [debug] [ADB] Getting connected emulators
+2018-05-02 18:55:39:226 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:39:245 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:39:245 - info: [debug] [ADB] 1 emulator(s) connected
+2018-05-02 18:55:39:246 - info: [debug] [ADB] Sending telnet command to device: avd name
+2018-05-02 18:55:39:247 - info: [debug] [ADB] Getting running emulator port
+2018-05-02 18:55:39:249 - info: [debug] [ADB] Socket connection to device created
+2018-05-02 18:55:39:250 - info: [debug] [ADB] Socket connection to device ready
+2018-05-02 18:55:39:251 - info: [debug] [ADB] Telnet command got response: Emulator-Api23-Default
+2018-05-02 18:55:39:254 - info: [debug] [ADB] Found emulator Emulator-Api23-Default in port 5554
+2018-05-02 18:55:39:254 - info: [debug] [ADB] Setting device id to emulator-5554
+2018-05-02 18:55:39:255 - info: [debug] [AndroidDriver] Not launching AVD because it is already running.
+2018-05-02 18:55:39:255 - info: [AndroidDriver] Using device: emulator-5554
+2018-05-02 18:55:39:256 - info: [ADB] Checking whether adb is present
+2018-05-02 18:55:39:258 - info: [ADB] Using adb from /usr/local/share/android-sdk/platform-tools/adb
+2018-05-02 18:55:39:258 - info: [debug] [ADB] Setting device id to emulator-5554
+2018-05-02 18:55:39:260 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:39:284 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:39:286 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2018-05-02 18:55:39:312 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2018-05-02 18:55:39:312 - info: [debug] [ADB] Device API level: 23
+2018-05-02 18:55:39:313 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
+2018-05-02 18:55:39:316 - info: [ADB] Using apkanalyzer from /usr/local/share/android-sdk/tools/bin/apkanalyzer
+2018-05-02 18:55:39:317 - info: [debug] [ADB] Starting '/usr/local/share/android-sdk/tools/bin/apkanalyzer' with args ["-h","manifest","print","/var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk"]
+2018-05-02 18:55:40:508 - info: [ADB] Package name: 'net.ludeke.calculator'
+2018-05-02 18:55:40:509 - info: [ADB] Main activity name: 'com.android.calculator2.Calculator'
+2018-05-02 18:55:40:509 - info: [debug] [AndroidDriver] Parsed package and activity are: net.ludeke.calculator/com.android.calculator2.Calculator
+2018-05-02 18:55:40:509 - info: [ADB] Getting device platform version
+2018-05-02 18:55:40:510 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:40:529 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:40:529 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2018-05-02 18:55:40:555 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2018-05-02 18:55:40:556 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:40:575 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:40:576 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell wm size'
+2018-05-02 18:55:41:059 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:41:075 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:41:075 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell wm density'
+2018-05-02 18:55:41:539 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:41:555 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:41:555 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.product.model'
+2018-05-02 18:55:41:578 - info: [debug] [ADB] Current device property 'ro.product.model': Android SDK built for x86
+2018-05-02 18:55:41:579 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:41:595 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:41:596 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.product.manufacturer'
+2018-05-02 18:55:41:621 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': unknown
+2018-05-02 18:55:41:623 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:41:641 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:41:641 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+2018-05-02 18:55:42:115 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.7.0.apk
+2018-05-02 18:55:42:117 - info: [ADB] Using apksigner from /usr/local/share/android-sdk/build-tools/27.0.3/apksigner
+2018-05-02 18:55:42:120 - info: [ADB] Using apksigner from /usr/local/share/android-sdk/build-tools/27.0.3/apksigner
+2018-05-02 18:55:42:120 - info: [debug] [ADB] Starting '/usr/local/share/android-sdk/build-tools/27.0.3/apksigner' with args 'verify,--print-certs,/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.7.0.apk'
+2018-05-02 18:55:42:560 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.7.0.apk' is already signed.
+2018-05-02 18:55:42:560 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2018-05-02 18:55:42:568 - info: [ADB] Using apksigner from /usr/local/share/android-sdk/build-tools/27.0.3/apksigner
+2018-05-02 18:55:42:570 - info: [ADB] Using apksigner from /usr/local/share/android-sdk/build-tools/27.0.3/apksigner
+2018-05-02 18:55:42:570 - info: [debug] [ADB] Starting '/usr/local/share/android-sdk/build-tools/27.0.3/apksigner' with args 'verify,--print-certs,/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2018-05-02 18:55:42:997 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2018-05-02 18:55:42:998 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server
+2018-05-02 18:55:42:999 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:43:016 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:43:016 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server'
+2018-05-02 18:55:43:223 - info: [debug] [ADB] App is installed
+2018-05-02 18:55:43:224 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2018-05-02 18:55:43:224 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:43:240 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:43:240 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2018-05-02 18:55:43:267 - info: [ADB] Checking whether aapt is present
+2018-05-02 18:55:43:268 - info: [ADB] Using aapt from /usr/local/share/android-sdk/build-tools/27.0.3/aapt
+2018-05-02 18:55:43:289 - info: [debug] [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.7.0' >= '1.7.0')
+2018-05-02 18:55:43:289 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+2018-05-02 18:55:43:289 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:43:308 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:43:309 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list packages io.appium.uiautomator2.server.test'
+2018-05-02 18:55:43:502 - info: [debug] [ADB] App is installed
+2018-05-02 18:55:43:503 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2018-05-02 18:55:43:503 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:43:519 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:43:519 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2018-05-02 18:55:43:545 - info: [ADB] Checking whether aapt is present
+2018-05-02 18:55:43:547 - info: [ADB] Using aapt from /usr/local/share/android-sdk/build-tools/27.0.3/aapt
+2018-05-02 18:55:43:555 - warn: [ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2018-05-02 18:55:43:555 - warn: [ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2018-05-02 18:55:43:556 - info: [debug] [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2018-05-02 18:55:43:557 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:43:573 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:43:573 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2018-05-02 18:55:43:780 - info: [debug] [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2018-05-02 18:55:43:781 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2018-05-02 18:55:43:798 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:43:816 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:43:816 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2018-05-02 18:55:43:840 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2018-05-02 18:55:43:840 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2018-05-02 18:55:43:841 - info: [debug] [Logcat] Starting logcat capture
+2018-05-02 18:55:53:854 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-05-02 18:55:53:854 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2018-05-02 18:55:53:855 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:53:872 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:53:873 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list packages io.appium.unlock'
+2018-05-02 18:55:54:061 - info: [debug] [ADB] App is installed
+2018-05-02 18:55:54:061 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2018-05-02 18:55:54:061 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:54:078 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:54:078 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.unlock'
+2018-05-02 18:55:54:103 - info: [ADB] Checking whether aapt is present
+2018-05-02 18:55:54:105 - info: [ADB] Using aapt from /usr/local/share/android-sdk/build-tools/27.0.3/aapt
+2018-05-02 18:55:54:114 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2018-05-02 18:55:54:115 - info: [debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8209
+2018-05-02 18:55:54:115 - info: [debug] [ADB] Forwarding system: 8209 to device: 6790
+2018-05-02 18:55:54:115 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp\:8209 tcp\:6790'
+2018-05-02 18:55:54:135 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:54:150 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:54:151 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell rm -rf /data/local/tmp/strings.json'
+2018-05-02 18:55:54:172 - info: [debug] [AndroidDriver] Extracting strings from apk
+2018-05-02 18:55:54:172 - info: [debug] [AndroidDriver] /var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk
+2018-05-02 18:55:54:172 - info: [debug] [AndroidDriver] null
+2018-05-02 18:55:54:174 - info: [debug] [AndroidDriver] /var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/net.ludeke.calculator
+2018-05-02 18:55:54:175 - info: [debug] [ADB] Extracting strings for language: default
+2018-05-02 18:55:54:175 - info: [ADB] Checking whether aapt is present
+2018-05-02 18:55:54:177 - info: [ADB] Using aapt from /usr/local/share/android-sdk/build-tools/27.0.3/aapt
+2018-05-02 18:55:54:220 - info: [ADB] Successfully extracted 63 strings from '/var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk' resources for '(default)' configuration
+2018-05-02 18:55:54:224 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 push /var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/net.ludeke.calculator/strings.json /data/local/tmp'
+2018-05-02 18:55:54:252 - info: [debug] [ADB] Checking app cert for /var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk
+2018-05-02 18:55:54:253 - info: [ADB] Using apksigner from /usr/local/share/android-sdk/build-tools/27.0.3/apksigner
+2018-05-02 18:55:54:255 - info: [ADB] Using apksigner from /usr/local/share/android-sdk/build-tools/27.0.3/apksigner
+2018-05-02 18:55:54:255 - info: [debug] [ADB] Starting '/usr/local/share/android-sdk/build-tools/27.0.3/apksigner' with args 'verify,--print-certs,/var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk'
+2018-05-02 18:55:54:647 - info: [debug] [ADB] '/var/folders/0r/pw4_qs9n7gg0dxsnrxnb7d9m0000gn/T/201842-4880-1eu3798.stgsi/appium-app.apk' is already signed.
+2018-05-02 18:55:54:648 - info: [debug] [ADB] Getting install status for net.ludeke.calculator
+2018-05-02 18:55:54:648 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:54:665 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:54:666 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list packages net.ludeke.calculator'
+2018-05-02 18:55:54:904 - info: [debug] [ADB] App is installed
+2018-05-02 18:55:54:904 - info: [debug] [ADB] Getting install status for net.ludeke.calculator
+2018-05-02 18:55:54:905 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:54:922 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:54:922 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list packages net.ludeke.calculator'
+2018-05-02 18:55:55:110 - info: [debug] [ADB] App is installed
+2018-05-02 18:55:55:110 - info: [debug] [ADB] Getting package info for 'net.ludeke.calculator'
+2018-05-02 18:55:55:110 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:55:126 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:55:127 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package net.ludeke.calculator'
+2018-05-02 18:55:55:152 - info: [ADB] Checking whether aapt is present
+2018-05-02 18:55:55:154 - info: [ADB] Using aapt from /usr/local/share/android-sdk/build-tools/27.0.3/aapt
+2018-05-02 18:55:55:163 - info: [debug] [ADB] The installed 'net.ludeke.calculator' package does not require upgrade ('2.0.0' >= '2.0.0')
+2018-05-02 18:55:55:163 - info: [AndroidDriver] Performing fast reset on 'net.ludeke.calculator'
+2018-05-02 18:55:55:164 - info: [debug] [ADB] Getting install status for net.ludeke.calculator
+2018-05-02 18:55:55:165 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:55:182 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:55:184 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list packages net.ludeke.calculator'
+2018-05-02 18:55:55:388 - info: [debug] [ADB] App is installed
+2018-05-02 18:55:55:389 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:55:405 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:55:405 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop net.ludeke.calculator'
+2018-05-02 18:55:55:846 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:55:864 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:55:865 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear net.ludeke.calculator'
+2018-05-02 18:55:56:131 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'net.ludeke.calculator' application (stop and clear)
+2018-05-02 18:55:56:132 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:56:148 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:56:148 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+2018-05-02 18:55:56:568 - info: [UiAutomator2] Starting uiautomator2 server 1.7.0
+2018-05-02 18:55:56:568 - info: [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.7.0.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2018-05-02 18:55:56:569 - info: [UiAutomator2] Running command: 'adb -s emulator-5554 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2018-05-02 18:55:56:572 - info: [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2018-05-02 18:55:56:573 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8209/wd/hub/status] with no body
+2018-05-02 18:55:57:593 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8209/wd/hub/status] with no body
+2018-05-02 18:55:58:601 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8209/wd/hub/status] with no body
+2018-05-02 18:55:58:614 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2018-05-02 18:55:58:615 - info: [debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8209/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default"},"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"6.0","deviceScreenSize":"480x800","deviceScreenDensity":240,"deviceModel":"Android SDK built for x86","deviceManufacturer":"unknown","appPackage":"net.ludeke.calculator"}}
+2018-05-02 18:55:58:625 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":"Created Session"}
+2018-05-02 18:55:58:626 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:58:644 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:58:646 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+2018-05-02 18:55:58:673 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-05-02 18:55:58:673 - info: [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'net.ludeke.calculator/com.android.calculator2.Calculator'. Starting it ourselves
+2018-05-02 18:55:58:674 - info: [debug] [ADB] Device API level: 23
+2018-05-02 18:55:58:675 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:58:692 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:58:692 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n net.ludeke.calculator/com.android.calculator2.Calculator -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2018-05-02 18:55:59:445 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'net.ludeke.calculator' and activity: 'com.android.calculator2.Calculator' to be focused
+2018-05-02 18:55:59:445 - info: [debug] [ADB] Possible activities, to be checked: 'com.android.calculator2.Calculator', 'net.ludeke.calculator.com.android.calculator2.Calculator'
+2018-05-02 18:55:59:447 - info: [debug] [ADB] Getting focused package and activity
+2018-05-02 18:55:59:447 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:55:59:466 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:55:59:466 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+2018-05-02 18:55:59:495 - info: [debug] [ADB] Found package: 'net.ludeke.calculator' and fully qualified activity name : 'com.android.calculator2.Calculator'
+2018-05-02 18:55:59:496 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/appium/device/pixel_ratio] with body: {}
+2018-05-02 18:55:59:503 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":1.5}"
+2018-05-02 18:55:59:504 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/appium/device/system_bars] with body: {}
+2018-05-02 18:55:59:510 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":{\"statusBar\":36}}"
+2018-05-02 18:55:59:510 - info: [debug] [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/window/current/size] with body: {}
+2018-05-02 18:55:59:518 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":{\"height\":800,\"width\":480}}"
+2018-05-02 18:55:59:520 - info: [Appium] New AndroidUiautomator2Driver session created successfully, session a53e2c07-7ba5-4ece-a5c7-039e23786d8b added to master session list
+2018-05-02 18:55:59:522 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1525287359522 (21:55:59 GMT+0300 (EEST))
+2018-05-02 18:55:59:524 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default"},"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"6.0","deviceScreenSize":"480x800","deviceScreenDensity":240,"deviceModel":"Android SDK built for x86","deviceManufacturer":"unknown","appPackage":"net.ludeke.calculator","pixelRatio":1.5,"statBarHeight":36,"viewportRect":{"left":0,"top":36,"width":480,"height":764}}}
+2018-05-02 18:55:59:525 - info: [HTTP] <-- POST /wd/hub/session 200 22454 ms - 1022
+2018-05-02 18:55:59:526 - info: [HTTP] 
+2018-05-02 18:55:59:578 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:55:59:578 - info: [HTTP] {}
+2018-05-02 18:55:59:580 - info: [debug] [W3C] Calling AppiumDriver.getSession() with args: ["a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:55:59:589 - info: [debug] [UiAutomator2] Getting session details from server to mix in
+2018-05-02 18:55:59:589 - info: [debug] [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c] with body: {}
+2018-05-02 18:55:59:595 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":{}}"
+2018-05-02 18:55:59:596 - info: [debug] [W3C] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default"},"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"6.0","deviceScreenSize":"480x800","deviceScreenDensity":240,"deviceModel":"Android SDK built for x86","deviceManufacturer":"unknown","appPackage":"net.ludeke.calculator","pixelRatio":1.5,"statBarHeight":36,"viewportRect":{"left":0,"top":36,"width":480,"height":764}}
+2018-05-02 18:55:59:597 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b 200 19 ms - 954
+2018-05-02 18:55:59:597 - info: [HTTP] 
+2018-05-02 18:55:59:609 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:55:59:609 - info: [HTTP] {}
+2018-05-02 18:55:59:609 - info: [debug] [W3C] Calling AppiumDriver.getSession() with args: ["a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:55:59:611 - info: [debug] [UiAutomator2] Getting session details from server to mix in
+2018-05-02 18:55:59:611 - info: [debug] [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c] with body: {}
+2018-05-02 18:55:59:616 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":{}}"
+2018-05-02 18:55:59:617 - info: [debug] [W3C] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"Emulator-Api23-Default"},"platformName":"android","app":"https://github.com/dtopuzov/mobile-testing/raw/master/testapps/Calculator_2.0.apk","automationName":"UIAutomator2","avd":"Emulator-Api23-Default","deviceName":"emulator-5554","deviceUDID":"emulator-5554","platformVersion":"6.0","deviceScreenSize":"480x800","deviceScreenDensity":240,"deviceModel":"Android SDK built for x86","deviceManufacturer":"unknown","appPackage":"net.ludeke.calculator","pixelRatio":1.5,"statBarHeight":36,"viewportRect":{"left":0,"top":36,"width":480,"height":764}}
+2018-05-02 18:55:59:619 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b 200 9 ms - 954
+2018-05-02 18:55:59:619 - info: [HTTP] 
+2018-05-02 18:55:59:644 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation
+2018-05-02 18:55:59:644 - info: [HTTP] {"orientation":"PORTRAIT"}
+2018-05-02 18:55:59:646 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:55:59:647 - info: [debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/orientation] with body: {"orientation":"PORTRAIT"}
+2018-05-02 18:56:00:523 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":"Already in portrait mode."}
+2018-05-02 18:56:00:524 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:00:525 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation 200 881 ms - 99
+2018-05-02 18:56:00:525 - info: [HTTP] 
+2018-05-02 18:56:00:529 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/elements
+2018-05-02 18:56:00:529 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/clear"}
+2018-05-02 18:56:00:530 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["id","net.ludeke.calculator:id/clear","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:00:531 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:00:532 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:00:533 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/elements] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/clear","context":"","multiple":true}
+2018-05-02 18:56:00:545 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":[]}
+2018-05-02 18:56:00:545 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2018-05-02 18:56:00:546 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/elements 200 17 ms - 12
+2018-05-02 18:56:00:546 - info: [HTTP] 
+2018-05-02 18:56:00:554 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:00:554 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/del"}
+2018-05-02 18:56:00:554 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","net.ludeke.calculator:id/del","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:00:555 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:00:555 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:00:556 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/del","context":"","multiple":false}
+2018-05-02 18:56:00:566 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"9af54094-52e6-4d04-9b13-cebe3c7ea404"}}
+2018-05-02 18:56:00:567 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"9af54094-52e6-4d04-9b13-cebe3c7ea404"}
+2018-05-02 18:56:00:568 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 14 ms - 88
+2018-05-02 18:56:00:568 - info: [HTTP] 
+2018-05-02 18:56:00:588 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:00:588 - info: [HTTP] {"using":"class name","value":"android.widget.EditText"}
+2018-05-02 18:56:00:589 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["class name","android.widget.EditText","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:00:589 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:00:589 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:00:590 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":false}
+2018-05-02 18:56:00:602 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"03812cff-ba62-40d0-94da-d25c3d502591"}}
+2018-05-02 18:56:00:603 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"03812cff-ba62-40d0-94da-d25c3d502591"}
+2018-05-02 18:56:00:604 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 16 ms - 88
+2018-05-02 18:56:00:605 - info: [HTTP] 
+2018-05-02 18:56:00:608 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/03812cff-ba62-40d0-94da-d25c3d502591/text
+2018-05-02 18:56:00:608 - info: [HTTP] {}
+2018-05-02 18:56:00:609 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:00:609 - info: [debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/03812cff-ba62-40d0-94da-d25c3d502591/text] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/03812cff-ba62-40d0-94da-d25c3d502591/text] with body: {}
+2018-05-02 18:56:01:108 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":\"\"}"
+2018-05-02 18:56:01:108 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:01:109 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/03812cff-ba62-40d0-94da-d25c3d502591/text 200 500 ms - 74
+2018-05-02 18:56:01:109 - info: [HTTP] 
+2018-05-02 18:56:01:114 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:01:114 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/digit2"}
+2018-05-02 18:56:01:114 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","net.ludeke.calculator:id/digit2","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:01:116 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:01:116 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:01:116 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/digit2","context":"","multiple":false}
+2018-05-02 18:56:01:125 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"54f5982d-f8e2-41b4-a38b-71fbf6f10876"}}
+2018-05-02 18:56:01:125 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"54f5982d-f8e2-41b4-a38b-71fbf6f10876"}
+2018-05-02 18:56:01:126 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 12 ms - 88
+2018-05-02 18:56:01:126 - info: [HTTP] 
+2018-05-02 18:56:01:130 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/54f5982d-f8e2-41b4-a38b-71fbf6f10876/click
+2018-05-02 18:56:01:130 - info: [HTTP] {"id":"54f5982d-f8e2-41b4-a38b-71fbf6f10876"}
+2018-05-02 18:56:01:131 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["54f5982d-f8e2-41b4-a38b-71fbf6f10876","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:01:132 - info: [debug] [JSONWP Proxy] Proxying [POST /element/54f5982d-f8e2-41b4-a38b-71fbf6f10876/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/54f5982d-f8e2-41b4-a38b-71fbf6f10876/click] with body: {"element":"54f5982d-f8e2-41b4-a38b-71fbf6f10876"}
+2018-05-02 18:56:01:142 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:01:142 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:01:143 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/54f5982d-f8e2-41b4-a38b-71fbf6f10876/click 200 13 ms - 14
+2018-05-02 18:56:01:143 - info: [HTTP] 
+2018-05-02 18:56:01:152 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:01:152 - info: [HTTP] {"using":"accessibility id","value":"plus"}
+2018-05-02 18:56:01:153 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["accessibility id","plus","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:01:153 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:01:153 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:01:154 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"accessibility id","selector":"plus","context":"","multiple":false}
+2018-05-02 18:56:01:220 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"6b8a7928-05f1-4ba5-983f-d3503a1bcb4a"}}
+2018-05-02 18:56:01:221 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"6b8a7928-05f1-4ba5-983f-d3503a1bcb4a"}
+2018-05-02 18:56:01:221 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 69 ms - 88
+2018-05-02 18:56:01:221 - info: [HTTP] 
+2018-05-02 18:56:01:227 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/6b8a7928-05f1-4ba5-983f-d3503a1bcb4a/click
+2018-05-02 18:56:01:228 - info: [HTTP] {"id":"6b8a7928-05f1-4ba5-983f-d3503a1bcb4a"}
+2018-05-02 18:56:01:229 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["6b8a7928-05f1-4ba5-983f-d3503a1bcb4a","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:01:229 - info: [debug] [JSONWP Proxy] Proxying [POST /element/6b8a7928-05f1-4ba5-983f-d3503a1bcb4a/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/6b8a7928-05f1-4ba5-983f-d3503a1bcb4a/click] with body: {"element":"6b8a7928-05f1-4ba5-983f-d3503a1bcb4a"}
+2018-05-02 18:56:01:717 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:01:717 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:01:718 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/6b8a7928-05f1-4ba5-983f-d3503a1bcb4a/click 200 491 ms - 14
+2018-05-02 18:56:01:718 - info: [HTTP] 
+2018-05-02 18:56:01:722 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:01:722 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/digit2"}
+2018-05-02 18:56:01:722 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","net.ludeke.calculator:id/digit2","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:01:723 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:01:723 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:01:723 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/digit2","context":"","multiple":false}
+2018-05-02 18:56:01:770 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"8195abfe-a01e-4e3d-beb2-6618e055c948"}}
+2018-05-02 18:56:01:771 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"8195abfe-a01e-4e3d-beb2-6618e055c948"}
+2018-05-02 18:56:01:772 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 49 ms - 88
+2018-05-02 18:56:01:773 - info: [HTTP] 
+2018-05-02 18:56:01:777 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/8195abfe-a01e-4e3d-beb2-6618e055c948/click
+2018-05-02 18:56:01:778 - info: [HTTP] {"id":"8195abfe-a01e-4e3d-beb2-6618e055c948"}
+2018-05-02 18:56:01:778 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["8195abfe-a01e-4e3d-beb2-6618e055c948","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:01:778 - info: [debug] [JSONWP Proxy] Proxying [POST /element/8195abfe-a01e-4e3d-beb2-6618e055c948/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/8195abfe-a01e-4e3d-beb2-6618e055c948/click] with body: {"element":"8195abfe-a01e-4e3d-beb2-6618e055c948"}
+2018-05-02 18:56:02:262 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:02:263 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:02:263 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/8195abfe-a01e-4e3d-beb2-6618e055c948/click 200 486 ms - 14
+2018-05-02 18:56:02:264 - info: [HTTP] 
+2018-05-02 18:56:02:267 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation
+2018-05-02 18:56:02:267 - info: [HTTP] {"orientation":"LANDSCAPE"}
+2018-05-02 18:56:02:268 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:02:270 - info: [debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/orientation] with body: {"orientation":"LANDSCAPE"}
+2018-05-02 18:56:03:452 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":"Rotation (LANDSCAPE LEFT) successful."}
+2018-05-02 18:56:03:452 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:03:453 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation 200 1185 ms - 111
+2018-05-02 18:56:03:453 - info: [HTTP] 
+2018-05-02 18:56:03:457 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:03:457 - info: [HTTP] {"using":"class name","value":"android.widget.EditText"}
+2018-05-02 18:56:03:457 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["class name","android.widget.EditText","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:03:458 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:03:459 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:03:459 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":false}
+2018-05-02 18:56:03:468 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"4055d6e4-1136-46b0-b0eb-a2f9dab126be"}}
+2018-05-02 18:56:03:469 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"4055d6e4-1136-46b0-b0eb-a2f9dab126be"}
+2018-05-02 18:56:03:470 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 13 ms - 88
+2018-05-02 18:56:03:470 - info: [HTTP] 
+2018-05-02 18:56:03:472 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/4055d6e4-1136-46b0-b0eb-a2f9dab126be/text
+2018-05-02 18:56:03:472 - info: [HTTP] {}
+2018-05-02 18:56:03:473 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:03:473 - info: [debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/4055d6e4-1136-46b0-b0eb-a2f9dab126be/text] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/4055d6e4-1136-46b0-b0eb-a2f9dab126be/text] with body: {}
+2018-05-02 18:56:03:481 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":\"2plus2\"}"
+2018-05-02 18:56:03:482 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:03:482 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/4055d6e4-1136-46b0-b0eb-a2f9dab126be/text 200 10 ms - 80
+2018-05-02 18:56:03:482 - info: [HTTP] 
+2018-05-02 18:56:03:497 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation
+2018-05-02 18:56:03:497 - info: [HTTP] {"orientation":"PORTRAIT"}
+2018-05-02 18:56:03:498 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:03:498 - info: [debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/orientation] with body: {"orientation":"PORTRAIT"}
+2018-05-02 18:56:04:657 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":"Rotation (PORTRAIT) successful."}
+2018-05-02 18:56:04:657 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:04:658 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/orientation 200 1160 ms - 105
+2018-05-02 18:56:04:658 - info: [HTTP] 
+2018-05-02 18:56:04:662 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/elements
+2018-05-02 18:56:04:662 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/clear"}
+2018-05-02 18:56:04:662 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["id","net.ludeke.calculator:id/clear","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:04:663 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:04:663 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:04:663 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/elements] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/clear","context":"","multiple":true}
+2018-05-02 18:56:04:672 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":[]}
+2018-05-02 18:56:04:673 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2018-05-02 18:56:04:674 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/elements 200 12 ms - 12
+2018-05-02 18:56:04:674 - info: [HTTP] 
+2018-05-02 18:56:04:677 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:04:677 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/del"}
+2018-05-02 18:56:04:678 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","net.ludeke.calculator:id/del","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:04:678 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:04:678 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:04:679 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/del","context":"","multiple":false}
+2018-05-02 18:56:04:690 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}}
+2018-05-02 18:56:04:691 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}
+2018-05-02 18:56:04:691 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 14 ms - 88
+2018-05-02 18:56:04:691 - info: [HTTP] 
+2018-05-02 18:56:04:696 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:04:696 - info: [HTTP] {"using":"class name","value":"android.widget.EditText"}
+2018-05-02 18:56:04:696 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["class name","android.widget.EditText","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:04:697 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:04:697 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:04:697 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":false}
+2018-05-02 18:56:04:708 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"94c3c5f8-7b3c-41cf-a142-3af8886c87cd"}}
+2018-05-02 18:56:04:709 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"94c3c5f8-7b3c-41cf-a142-3af8886c87cd"}
+2018-05-02 18:56:04:709 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 13 ms - 88
+2018-05-02 18:56:04:709 - info: [HTTP] 
+2018-05-02 18:56:04:711 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/94c3c5f8-7b3c-41cf-a142-3af8886c87cd/text
+2018-05-02 18:56:04:711 - info: [HTTP] {}
+2018-05-02 18:56:04:712 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:04:712 - info: [debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/94c3c5f8-7b3c-41cf-a142-3af8886c87cd/text] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/94c3c5f8-7b3c-41cf-a142-3af8886c87cd/text] with body: {}
+2018-05-02 18:56:04:719 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":\"2plus2\"}"
+2018-05-02 18:56:04:719 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:04:720 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/94c3c5f8-7b3c-41cf-a142-3af8886c87cd/text 200 8 ms - 80
+2018-05-02 18:56:04:720 - info: [HTTP] 
+2018-05-02 18:56:04:723 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click
+2018-05-02 18:56:04:723 - info: [HTTP] {"id":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}
+2018-05-02 18:56:04:724 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:04:724 - info: [debug] [JSONWP Proxy] Proxying [POST /element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click] with body: {"element":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}
+2018-05-02 18:56:04:737 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:04:738 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:04:739 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click 200 16 ms - 14
+2018-05-02 18:56:04:739 - info: [HTTP] 
+2018-05-02 18:56:04:744 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:04:744 - info: [HTTP] {"using":"class name","value":"android.widget.EditText"}
+2018-05-02 18:56:04:744 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["class name","android.widget.EditText","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:04:745 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:04:745 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:04:745 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":false}
+2018-05-02 18:56:04:773 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"f9d394e6-4383-430a-8531-71c699566594"}}
+2018-05-02 18:56:04:774 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"f9d394e6-4383-430a-8531-71c699566594"}
+2018-05-02 18:56:04:775 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 31 ms - 88
+2018-05-02 18:56:04:775 - info: [HTTP] 
+2018-05-02 18:56:04:778 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/f9d394e6-4383-430a-8531-71c699566594/text
+2018-05-02 18:56:04:778 - info: [HTTP] {}
+2018-05-02 18:56:04:778 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:04:779 - info: [debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/f9d394e6-4383-430a-8531-71c699566594/text] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/f9d394e6-4383-430a-8531-71c699566594/text] with body: {}
+2018-05-02 18:56:05:284 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":\"2plus\"}"
+2018-05-02 18:56:05:284 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:05:285 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/f9d394e6-4383-430a-8531-71c699566594/text 200 507 ms - 79
+2018-05-02 18:56:05:285 - info: [HTTP] 
+2018-05-02 18:56:05:289 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click
+2018-05-02 18:56:05:289 - info: [HTTP] {"id":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}
+2018-05-02 18:56:05:289 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:05:290 - info: [debug] [JSONWP Proxy] Proxying [POST /element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click] with body: {"element":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}
+2018-05-02 18:56:05:301 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:05:303 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:05:304 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click 200 14 ms - 14
+2018-05-02 18:56:05:304 - info: [HTTP] 
+2018-05-02 18:56:05:308 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:05:308 - info: [HTTP] {"using":"class name","value":"android.widget.EditText"}
+2018-05-02 18:56:05:308 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["class name","android.widget.EditText","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:05:309 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:05:309 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:05:309 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":false}
+2018-05-02 18:56:05:343 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"7930ad23-fab8-4951-97a4-4e31aad13163"}}
+2018-05-02 18:56:05:344 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"7930ad23-fab8-4951-97a4-4e31aad13163"}
+2018-05-02 18:56:05:344 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 37 ms - 88
+2018-05-02 18:56:05:345 - info: [HTTP] 
+2018-05-02 18:56:05:348 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/7930ad23-fab8-4951-97a4-4e31aad13163/text
+2018-05-02 18:56:05:348 - info: [HTTP] {}
+2018-05-02 18:56:05:348 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:05:349 - info: [debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/7930ad23-fab8-4951-97a4-4e31aad13163/text] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/7930ad23-fab8-4951-97a4-4e31aad13163/text] with body: {}
+2018-05-02 18:56:05:834 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":\"2\"}"
+2018-05-02 18:56:05:835 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:05:835 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/7930ad23-fab8-4951-97a4-4e31aad13163/text 200 487 ms - 75
+2018-05-02 18:56:05:836 - info: [HTTP] 
+2018-05-02 18:56:05:840 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click
+2018-05-02 18:56:05:840 - info: [HTTP] {"id":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}
+2018-05-02 18:56:05:840 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:05:841 - info: [debug] [JSONWP Proxy] Proxying [POST /element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click] with body: {"element":"5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0"}
+2018-05-02 18:56:05:856 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:05:856 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:05:857 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5c6bbc7c-e80e-4b3c-ba7a-e8f2ff9fe6f0/click 200 17 ms - 14
+2018-05-02 18:56:05:858 - info: [HTTP] 
+2018-05-02 18:56:05:861 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:05:861 - info: [HTTP] {"using":"class name","value":"android.widget.EditText"}
+2018-05-02 18:56:05:861 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["class name","android.widget.EditText","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:05:862 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:05:862 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:05:862 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":false}
+2018-05-02 18:56:05:894 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"01251dd1-e558-4791-91dc-0f57adae041e"}}
+2018-05-02 18:56:05:894 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"01251dd1-e558-4791-91dc-0f57adae041e"}
+2018-05-02 18:56:05:895 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 34 ms - 88
+2018-05-02 18:56:05:897 - info: [HTTP] 
+2018-05-02 18:56:05:988 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/01251dd1-e558-4791-91dc-0f57adae041e/text
+2018-05-02 18:56:05:988 - info: [HTTP] {}
+2018-05-02 18:56:05:988 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:05:989 - info: [debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/01251dd1-e558-4791-91dc-0f57adae041e/text] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/01251dd1-e558-4791-91dc-0f57adae041e/text] with body: {}
+2018-05-02 18:56:06:385 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":\"\"}"
+2018-05-02 18:56:06:385 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:06:386 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/01251dd1-e558-4791-91dc-0f57adae041e/text 200 398 ms - 74
+2018-05-02 18:56:06:387 - info: [HTTP] 
+2018-05-02 18:56:06:391 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:06:391 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/digit2"}
+2018-05-02 18:56:06:392 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","net.ludeke.calculator:id/digit2","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:06:393 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:06:393 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:06:393 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/digit2","context":"","multiple":false}
+2018-05-02 18:56:06:407 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"679e9a46-0d3c-469e-8787-7333f7d04133"}}
+2018-05-02 18:56:06:408 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"679e9a46-0d3c-469e-8787-7333f7d04133"}
+2018-05-02 18:56:06:409 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 17 ms - 88
+2018-05-02 18:56:06:409 - info: [HTTP] 
+2018-05-02 18:56:06:413 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/679e9a46-0d3c-469e-8787-7333f7d04133/click
+2018-05-02 18:56:06:413 - info: [HTTP] {"id":"679e9a46-0d3c-469e-8787-7333f7d04133"}
+2018-05-02 18:56:06:414 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["679e9a46-0d3c-469e-8787-7333f7d04133","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:06:414 - info: [debug] [JSONWP Proxy] Proxying [POST /element/679e9a46-0d3c-469e-8787-7333f7d04133/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/679e9a46-0d3c-469e-8787-7333f7d04133/click] with body: {"element":"679e9a46-0d3c-469e-8787-7333f7d04133"}
+2018-05-02 18:56:06:427 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:06:428 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:06:429 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/679e9a46-0d3c-469e-8787-7333f7d04133/click 200 15 ms - 14
+2018-05-02 18:56:06:429 - info: [HTTP] 
+2018-05-02 18:56:06:433 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:06:433 - info: [HTTP] {"using":"accessibility id","value":"plus"}
+2018-05-02 18:56:06:434 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["accessibility id","plus","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:06:435 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:06:435 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:06:435 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"accessibility id","selector":"plus","context":"","multiple":false}
+2018-05-02 18:56:06:468 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"be96094e-fb67-4e05-9b2f-bbadfed4ccc6"}}
+2018-05-02 18:56:06:469 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"be96094e-fb67-4e05-9b2f-bbadfed4ccc6"}
+2018-05-02 18:56:06:470 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 36 ms - 88
+2018-05-02 18:56:06:471 - info: [HTTP] 
+2018-05-02 18:56:06:475 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/be96094e-fb67-4e05-9b2f-bbadfed4ccc6/click
+2018-05-02 18:56:06:475 - info: [HTTP] {"id":"be96094e-fb67-4e05-9b2f-bbadfed4ccc6"}
+2018-05-02 18:56:06:475 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["be96094e-fb67-4e05-9b2f-bbadfed4ccc6","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:06:476 - info: [debug] [JSONWP Proxy] Proxying [POST /element/be96094e-fb67-4e05-9b2f-bbadfed4ccc6/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/be96094e-fb67-4e05-9b2f-bbadfed4ccc6/click] with body: {"element":"be96094e-fb67-4e05-9b2f-bbadfed4ccc6"}
+2018-05-02 18:56:06:986 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:06:987 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:06:988 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/be96094e-fb67-4e05-9b2f-bbadfed4ccc6/click 200 513 ms - 14
+2018-05-02 18:56:06:989 - info: [HTTP] 
+2018-05-02 18:56:06:993 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:06:993 - info: [HTTP] {"using":"id","value":"net.ludeke.calculator:id/digit2"}
+2018-05-02 18:56:06:993 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","net.ludeke.calculator:id/digit2","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:06:994 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:06:994 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:06:994 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"id","selector":"net.ludeke.calculator:id/digit2","context":"","multiple":false}
+2018-05-02 18:56:07:013 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"5a22a8b8-93a5-49b1-b1de-2666c4e628fb"}}
+2018-05-02 18:56:07:014 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5a22a8b8-93a5-49b1-b1de-2666c4e628fb"}
+2018-05-02 18:56:07:015 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 22 ms - 88
+2018-05-02 18:56:07:015 - info: [HTTP] 
+2018-05-02 18:56:07:018 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5a22a8b8-93a5-49b1-b1de-2666c4e628fb/click
+2018-05-02 18:56:07:019 - info: [HTTP] {"id":"5a22a8b8-93a5-49b1-b1de-2666c4e628fb"}
+2018-05-02 18:56:07:019 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["5a22a8b8-93a5-49b1-b1de-2666c4e628fb","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:07:020 - info: [debug] [JSONWP Proxy] Proxying [POST /element/5a22a8b8-93a5-49b1-b1de-2666c4e628fb/click] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/5a22a8b8-93a5-49b1-b1de-2666c4e628fb/click] with body: {"element":"5a22a8b8-93a5-49b1-b1de-2666c4e628fb"}
+2018-05-02 18:56:07:525 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":true}
+2018-05-02 18:56:07:527 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-05-02 18:56:07:528 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/5a22a8b8-93a5-49b1-b1de-2666c4e628fb/click 200 509 ms - 14
+2018-05-02 18:56:07:528 - info: [HTTP] 
+2018-05-02 18:56:07:532 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/appium/app/background
+2018-05-02 18:56:07:532 - info: [HTTP] {"seconds":10}
+2018-05-02 18:56:07:536 - info: [debug] [W3C] Calling AppiumDriver.background() with args: [10,"a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:07:538 - info: [debug] [ADB] Getting focused package and activity
+2018-05-02 18:56:07:538 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:56:07:558 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:56:07:558 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+2018-05-02 18:56:07:587 - info: [debug] [ADB] Pressing the HOME button
+2018-05-02 18:56:07:588 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:56:07:603 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:56:07:603 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell input keyevent 3'
+2018-05-02 18:56:18:039 - info: [debug] [AndroidDriver] Bringing application back to foreground with arguments: {"pkg":"net.ludeke.calculator","activity":"com.android.calculator2.Calculator","action":"android.intent.action.MAIN","category":"android.intent.category.LAUNCHER","flags":"0x10200000","waitPkg":"net.ludeke.calculator","waitActivity":"com.android.calculator2.Calculator","optionalIntentArguments":null,"stopApp":false}
+2018-05-02 18:56:18:040 - info: [debug] [ADB] Device API level: 23
+2018-05-02 18:56:18:040 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:56:18:057 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:56:18:058 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n net.ludeke.calculator/com.android.calculator2.Calculator -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2018-05-02 18:56:18:547 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'net.ludeke.calculator' and activity: 'com.android.calculator2.Calculator' to be focused
+2018-05-02 18:56:18:547 - info: [debug] [ADB] Possible activities, to be checked: 'com.android.calculator2.Calculator', 'net.ludeke.calculator.com.android.calculator2.Calculator'
+2018-05-02 18:56:18:548 - info: [debug] [ADB] Getting focused package and activity
+2018-05-02 18:56:18:548 - info: [debug] [ADB] Getting connected devices...
+2018-05-02 18:56:18:565 - info: [debug] [ADB] 1 device(s) connected
+2018-05-02 18:56:18:566 - info: [debug] [ADB] Running '/usr/local/share/android-sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+2018-05-02 18:56:18:601 - info: [debug] [ADB] Found package: 'net.ludeke.calculator' and fully qualified activity name : 'com.android.calculator2.Calculator'
+2018-05-02 18:56:18:602 - info: [debug] [W3C] Responding to client with driver.background() result: null
+2018-05-02 18:56:18:602 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/appium/app/background 200 11071 ms - 14
+2018-05-02 18:56:18:603 - info: [HTTP] 
+2018-05-02 18:56:18:607 - info: [HTTP] --> POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element
+2018-05-02 18:56:18:607 - info: [HTTP] {"using":"class name","value":"android.widget.EditText"}
+2018-05-02 18:56:18:609 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["class name","android.widget.EditText","a53e2c07-7ba5-4ece-a5c7-039e23786d8b"]
+2018-05-02 18:56:18:610 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-05-02 18:56:18:610 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-05-02 18:56:18:610 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element] with body: {"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":false}
+2018-05-02 18:56:19:675 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1eb2bbce-05cd-4b39-b0e8-43b03031504c","status":0,"value":{"ELEMENT":"34573c56-4335-4af7-a2a2-ac5b471b3fa3"}}
+2018-05-02 18:56:19:677 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"34573c56-4335-4af7-a2a2-ac5b471b3fa3"}
+2018-05-02 18:56:19:678 - info: [HTTP] <-- POST /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element 200 1071 ms - 88
+2018-05-02 18:56:19:678 - info: [HTTP] 
+2018-05-02 18:56:19:681 - info: [HTTP] --> GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/34573c56-4335-4af7-a2a2-ac5b471b3fa3/text
+2018-05-02 18:56:19:681 - info: [HTTP] {}
+2018-05-02 18:56:19:681 - info: [W3C] Driver proxy active, passing request on via HTTP proxy
+2018-05-02 18:56:19:682 - info: [debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/34573c56-4335-4af7-a2a2-ac5b471b3fa3/text] to [GET http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c/element/34573c56-4335-4af7-a2a2-ac5b471b3fa3/text] with body: {}
+2018-05-02 18:56:19:691 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1eb2bbce-05cd-4b39-b0e8-43b03031504c\",\"status\":0,\"value\":\"2plus2\"}"
+2018-05-02 18:56:19:692 - info: [JSONWP Proxy] Replacing sessionId 1eb2bbce-05cd-4b39-b0e8-43b03031504c with a53e2c07-7ba5-4ece-a5c7-039e23786d8b
+2018-05-02 18:56:19:693 - info: [HTTP] <-- GET /wd/hub/session/a53e2c07-7ba5-4ece-a5c7-039e23786d8b/element/34573c56-4335-4af7-a2a2-ac5b471b3fa3/text 200 12 ms - 80
+2018-05-02 18:56:19:693 - info: [HTTP] 
+2018-05-02 18:57:19:696 - warn: [BaseDriver] Shutting down because we waited 60 seconds for a command
+2018-05-02 18:57:19:700 - info: [debug] [UiAutomator2] Deleting UiAutomator2 session
+2018-05-02 18:57:19:701 - warn: [Appium] Closing session, cause was 'New Command Timeout of 60 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+2018-05-02 18:57:19:701 - info: [Appium] Removing session a53e2c07-7ba5-4ece-a5c7-039e23786d8b from our master session list
+2018-05-02 18:57:19:702 - info: [debug] [UiAutomator2] Deleting UiAutomator2 server session
+2018-05-02 18:57:19:703 - info: [debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://localhost:8209/wd/hub/session/1eb2bbce-05cd-4b39-b0e8-43b03031504c] with no body
+2018-05-02 18:57:19:707 - error: uncaughtException: write EPIPE date=Wed May 02 2018 21:57:19 GMT+0300 (EEST), pid=4880, uid=501, gid=20, cwd=/Users/dtopuzov/Git/pragmatic/calc, execPath=/usr/local/Cellar/node@8/8.11.1/bin/node, version=v8.11.1, argv=[/usr/local/Cellar/node@8/8.11.1/bin/node, /usr/local/lib/node_modules/appium/build/lib/main.js, --port, 33793, --address, 127.0.0.1, --log, /Users/dtopuzov/Git/pragmatic/calc/temp.log], rss=140103680, heapTotal=113938432, heapUsed=94166224, external=408493, loadavg=[2.23193359375, 2.87548828125, 2.8984375], uptime=11980, trace=[column=11, file=util.js, function=_errnoException, line=1022, method=null, native=false, column=14, file=net.js, function=WriteWrap.afterWrite, line=880, method=afterWrite, native=false], stack=[Error: write EPIPE,     at _errnoException (util.js:1022:11),     at WriteWrap.afterWrite (net.js:880:14)]
+2018-05-02 18:57:19:709 - error: uncaughtException: write EPIPE date=Wed May 02 2018 21:57:19 GMT+0300 (EEST), pid=4880, uid=501, gid=20, cwd=/Users/dtopuzov/Git/pragmatic/calc, execPath=/usr/local/Cellar/node@8/8.11.1/bin/node, version=v8.11.1, argv=[/usr/local/Cellar/node@8/8.11.1/bin/node, /usr/local/lib/node_modules/appium/build/lib/main.js, --port, 33793, --address, 127.0.0.1, --log, /Users/dtopuzov/Git/pragmatic/calc/temp.log], rss=140304384, heapTotal=113938432, heapUsed=94373256, external=408517, loadavg=[2.23193359375, 2.87548828125, 2.8984375], uptime=11980, trace=[column=11, file=util.js, function=_errnoException, line=1022, method=null, native=false, column=14, file=net.js, function=WriteWrap.afterWrite, line=880, method=afterWrite, native=false], stack=[Error: write EPIPE,     at _errnoException (util.js:1022:11),     at WriteWrap.afterWrite (net.js:880:14)]
