@@ -1,0 +1,34 @@
+Java lint checker
+http://checkstyle.sourceforge.net/
+
+How to tun checkstyle
+From View display Gradle and from it run checkstyle (could be run against main or test)
+
+If testing is on many devices - e.g. 200 devices:
+Appium + SauceLabs
+
+Artifacts to gather:
+Screenshots
+Logcat
+junit styxml style reporting
+HTML report with pictures - expected pic, actual pic, differences
+
+XCode - program that iOS app are developed with
+To install XCode
+NAvigate to App store
+Search for XCode
+
+Tricks for iPhone testing:
+Test on iPhone X and on iPhone that is not X (e.g. 7)
+
+IN iOS name and label are playing role of id
+
+Always zip app files - they are folders 
+
+Selenium id == Android content description resource id == iOS name
+
+
+HW
+Run the Framework
+Refactor IFs
+Implement screenshot capture logic
