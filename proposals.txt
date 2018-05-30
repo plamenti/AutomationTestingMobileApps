@@ -32,3 +32,31 @@ HW
 Run the Framework
 Refactor IFs
 Implement screenshot capture logic
+
+After Test fail take following artifacts:
+Screenshots
+page source (xml)
+
+Good practice is to save artifacts in folder, that is cleaned and created by Maven or Gradle:
+For Maven - 
+For Gradle - build folder
+
+Common reason for image comparison failures 
+Video cards add one pixel through borders, that is different according the card. 
+Solution is to use some different pixel similarity. 
+
+
+To execute tests in CI build Gradle tasks
+From console (for WIndows ): ./gradlew <name of the task>
+
+Important - change Java version
+
+On UNIX systems is possible Gradle to can not find some Environment variables (e.g. ANDROID_HOME) - the reason is that environment variable is set only for User.
+
+############
+idim1@20mm.eu
+Adm123
+ActivTrader
+
+app - ActivTrades
+############
