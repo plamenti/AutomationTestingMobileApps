@@ -1,8 +1,8 @@
-hw_task2.sikuli/* linguist-vendored
-hw_task3.sikuli/* linguist-vendored
-calc/.idea/* linguist-vendored
-other-scripts/* linguist-vendored
-setup-mac/* linguist-vendored
-homework-solved/* linguist-vendored
-homework/* linguist-vendored
-setup-windows/* linguist-vendored
+**/hw_task2.sikuli/** linguist-vendored
+**/hw_task3.sikuli/** linguist-vendored
+**/calc/.idea/** linguist-vendored
+**/other-scripts/** linguist-vendored
+**/setup-mac/** linguist-vendored
+**/homework-solved/** linguist-vendored
+**/homework/** linguist-vendored
+**/setup-windows/** linguist-vendored
